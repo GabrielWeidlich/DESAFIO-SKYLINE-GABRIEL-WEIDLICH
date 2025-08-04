@@ -22,15 +22,8 @@ export default function LocalizacaoContent() {
 
       <div className="flex-grow flex flex-col">
         
-        <header className="w-full bg-gray-800 p-6 flex-shrink-0">
-          <h1 className="font-serif text-4xl font-normal text-white">D/SENSE</h1>
-        </header>
-
         <main className="flex-grow flex items-center justify-center p-8 bg-background">
-          <div className="text-center text-gray-400">
-            <p>Área reservada para o Ultratour / Mapa.</p>
-            
-          </div>
+          <div></div>
         </main>
 
         <footer className="w-full p-6 flex items-center justify-center gap-4 bg-background flex-shrink-0">
@@ -41,7 +34,7 @@ export default function LocalizacaoContent() {
         </footer>
       </div>
 
-      <div className="relative w-24 flex-shrink-0 bg-gray-800">
+      <div className="relative w-24 flex-shrink-0 bg-dark-gray">
         <Link
           href="/"
           className="absolute bottom-8 left-1/2 -translate-x-1/2 transition-transform hover:scale-110"
