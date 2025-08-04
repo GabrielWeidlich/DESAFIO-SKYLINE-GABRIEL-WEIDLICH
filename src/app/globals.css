@@ -1,0 +1,21 @@
+@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.no-scrollbar::-webkit-scrollbar {
+    display: none; 
+}
+
+.no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.bg-light-beige{
+    background-color: #EEE7E1;
+}
+
+.bg-dark-gray{
+    background-color: #2C2F30;
+}
