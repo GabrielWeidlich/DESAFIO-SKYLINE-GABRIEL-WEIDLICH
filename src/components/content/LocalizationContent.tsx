@@ -1,36 +1,59 @@
-// src/components/content/LocalizacaoContent.tsx
+'use client'; 
 
-import React from 'react';
+import React, { useState } from 'react'; 
 import Image from 'next/image';
 import Link from 'next/link';
-
-const SubNavButton = ({ label, isActive = false }: { label: string; isActive?: boolean }) => {
-  return (
-    <button
-      className={`px-6 py-2 border border-gray-300 rounded-md text-xs uppercase tracking-widest transition-colors
-        ${isActive ? 'bg-gray-800 text-white border-gray-800' : 'bg-transparent text-gray-600 hover:bg-gray-200'}`}
-    >
-      {label}
-    </button>
-  );
-};
+import Mapa2D from '@/components/content/localization/Mapa_2d';
+import Proximidades from './localization/Proximidades';
+import SubNavButton from '@/components/ui/SubNavButton';
 
 
 export default function LocalizacaoContent() {
+  const [activeTab, setActiveTab] = useState('ultratour');
+
+  const renderTabContent = () => {
+    switch (activeTab) {
+      case 'ultratour':
+        return <div className="text-center text-stone-800">Conteúdo de <strong>Ultratour</strong>.</div>;
+      case 'proximidades':
+        return <Proximidades />;
+      case 'mapa2d':
+        return <Mapa2D/>;
+      case 'mapasatellite':
+        return <Mapa2D/>;
+      default:
+        return null;
+    }
+  };
+
   return (
     <div className="w-full h-full flex">
-
       <div className="flex-grow flex flex-col">
-        
         <main className="flex-grow flex items-center justify-center p-8 bg-background">
-          <div></div>
+          {renderTabContent()}
         </main>
 
-        <footer className="w-full p-6 flex items-center justify-center gap-4 bg-background flex-shrink-0">
-          <SubNavButton label="Ultratour" isActive={true} />
-          <SubNavButton label="Proximidades" />
-          <SubNavButton label="Mapa 2D" />
-          <SubNavButton label="Mapa Satélite" />
+        <footer className="w-full p-6 flex items-center gap-4 justify-evenly bg-background">
+          <SubNavButton 
+            label="Ultratour" 
+            isActive={activeTab === 'ultratour'} 
+            onClick={() => setActiveTab('ultratour')} 
+          />
+          <SubNavButton 
+            label="Proximidades" 
+            isActive={activeTab === 'proximidades'} 
+            onClick={() => setActiveTab('proximidades')} 
+          />
+          <SubNavButton 
+            label="Mapa 2D" 
+            isActive={activeTab === 'mapa2d'} 
+            onClick={() => setActiveTab('mapa2d')} 
+          />
+          <SubNavButton 
+            label="Mapa Satélite" 
+            isActive={activeTab === 'mapasatellite'} 
+            onClick={() => setActiveTab('mapasatellite')} 
+          />
         </footer>
       </div>
 
@@ -39,10 +62,9 @@ export default function LocalizacaoContent() {
           href="/"
           className="absolute bottom-8 left-1/2 -translate-x-1/2 transition-transform hover:scale-110"
         >
-          <Image src="/icons/Home-btn.svg" alt="Início" width={56} height={56} />
+          <Image src="/icons/Home-white.svg" alt="Início" width={56} height={56} />
         </Link>
       </div>
-
     </div>
   );
 }

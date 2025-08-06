@@ -1,8 +1,8 @@
 export const menuImages = [
-    {id: "diferenciais", label: "Diferenciais", image: "/images/B - Diferenciais.svg"},
-    {id: "easyhome", label: "Easyhome", image: "/images/B - Easyhome.svg"},
-    {id: "localizacao", label: "Localização", image: "/images/B - Localização.svg"},
-    {id: "maquetevirtual", label: "Maquete virtual", image: "/images/B - Maquete virtual.svg"},
-    {id: "perspectiva", label: "Perspectiva", image: "/images/B - Perspectivas.svg"},
-    {id: "plantas", label: "Plantas", image: "/images/B - Plantas.svg"}
+    {id: "localizacao", label: "Localização", image: "/images/Localização.jpg"},
+    {id: "perspectiva", label: "Perspectiva", image: "/images/Perspectivas.jpg"},
+    {id: "diferenciais", label: "Diferenciais", image: "/images/Diferenciais.jpg"},
+    {id: "plantas", label: "Plantas", image: "/images/Plantas.jpg"},
+    {id: "maquetevirtual", label: "Maquete virtual", image: "/images/Maquete virtual.jpg"},
+    {id: "easyhome", label: "Easyhome", image: "/images/Easyhome.jpg"}
 ]

@@ -14,7 +14,7 @@ const nextConfig = {
   compress: false,
   
   reactStrictMode: true   
-};                      
-                  
+};                       
+                   
 export default nextConfig;     
-           
+              
