@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
-import {Montserrat } from 'next/font/google'
+import { Montserrat } from 'next/font/google'
 import './globals.css'
+import OrientationGuard from '@/components/layout/OrientationGuard'
 
 const montserrat = Montserrat({
   subsets: ['latin'],
@@ -20,7 +21,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="pt-br" className={`${montserrat.variable} font-mont`}>
-      <body className="bg-light-beige text-text-primary">{children}</body>
+      <body className="bg-light-beige text-text-primary">
+        <OrientationGuard>{children}</OrientationGuard>
+      </body>
     </html>
   )
 }

@@ -20,7 +20,7 @@ export default function SidebarItem({ id, label, image, selectedItem}: SidebarIt
       <div
         className={`
           relative w-full 
-           ${isSelected ? "h-[20rem]" : "h-[6rem] group-hover:h-[20rem]"} 
+           ${isSelected ? "h-[40vh]" : "h-[12.5vh] group-hover:h-[40vh]"} 
           transition-[height] duration-500 ease-in-out 
           overflow-hidden shadow-xl border-r border-neutral-800
         `}
