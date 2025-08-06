@@ -19,3 +19,8 @@
 .bg-dark-gray{
     background-color: #2C2F30;
 }
+
+.yarl__slide_title {
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+}
