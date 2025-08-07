@@ -1,6 +1,6 @@
 # Desafio Skyline
 
-Este é um projeto de uma aplicação web interativa, desenvolvida como parte de um desafio. A aplicação funciona como um hotsite para um empreendimento imobiliário fictício chamado "Skyline", apresentando suas características, diferenciais, localização e plantas de forma visual e interativa.
+Este é um projeto de uma aplicação web interativa, desenvolvida como parte de um desafio. A aplicação funciona como um hotsite para um empreendimento imobiliário, apresentando suas características, diferenciais, localização e plantas de forma visual e interativa.
 
 A interface foi projetada para ser responsiva e oferecer uma experiência de usuário fluida, principalmente em tablets e dispositivos com orientação paisagem.
 
